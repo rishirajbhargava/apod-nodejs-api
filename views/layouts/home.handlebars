@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Cosmic Snap | Image of the Day </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+
+
+
+</head>
+
+<body class="d-flex text-center login-util">
+    <div class="body-container">
+        <header>
+            <div class="nav_bar flex">
+                <a href="/"><span class="float-md-start brand"><img class="brand-img" src="/globe.png">Cosmic.<span
+                            class="sub-heading-brand">snap</span></span></a>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a href="/" class="  py-1 px-0 active mobile-nav-util" aria-current="page" href="#">Get Image</a>
+                    {{#if user}}
+                    <a href="/logout" class=" py-1 px-0" href="#">Logout</a>
+                    {{else}}
+                    <a href="/login" class=" py-1 px-0" href="#">Login</a>
+                    {{/if}}
+                    <a href="/register" class="py-1 px-0 mobile-nav-util" href="#">Register</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="home-content">
+                {{#if message}}
+                <div class="alert alert-warning">
+                    <p>{{message}}</p>
+                </div>
+                {{/if}}
+                {{{body}}}
+            </div>
+        </main>
+
+        <footer class="text-white ">
+            <p>Copyright &copy; <a href="/">Cosmic Snap</a>. by <a target="_blank"
+                    href="https://www.linkedin.com/in/rishirajbhargava/">Rishi</a></p>
+        </footer>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

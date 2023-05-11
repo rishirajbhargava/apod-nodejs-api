@@ -1,0 +1,50 @@
+<div>
+    <div class="top-text">
+      <h4>Image of the Day</h4>
+      <p>
+       NASA selects a daily Image of the Day to highlight
+        amazing visuals captured by their spacecraft and telescopes, 
+        including shots of Earth, galaxies, and planets. Each image comes 
+        with a brief scientific explanation and details on how it was captured.
+         It's a great way to stay up-to-date on space discoveries and appreciate
+        the beauty of the universe.
+      </p>
+    </div>
+
+
+    <div class="container">
+        <div class="image-side">
+          <img src="{{response.url}}" alt="nasa-image">
+          <div>
+            <h5>
+              Picture : {{response.title}}
+            </h5>
+          </div>
+        </div>
+       
+
+
+        <div class="text-side">
+           <h4>{{response.title}}</h4>
+        <p>{{response.explanation}}</p>
+        
+        {{!-- <div class="button"><input type="radio" id="seemore" name="seeMore">
+        <label for="seemore">HTML</label></div>
+        --}}
+        <div class="links">
+          <a target="_blank" href="{{response.url}}">
+            Image
+          </a>
+          <a target="_blank" href="{{response.hdurl}}">
+            HD Image
+          </a>
+        </div>
+
+
+
+        </div>
+
+
+
+    </div>
+</div>
